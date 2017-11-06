@@ -16,12 +16,12 @@
     </dependency>
   </dependencies>
   
-  <!--distributionManagement>
+  <distributionManagement>
   <snapshotRepository>
-  <id>dxc</id>
-  <url>http://localhost:8081/nexus/content/repositories/dxc/</url>
+  <id>mvn</id>
+  <url>http://localhost:8081/nexus/content/repositories/mvn/</url>
   </snapshotRepository>
-  </distributionManagement-->
+  </distributionManagement>
  
   <build>
     <finalName>web</finalName>
@@ -72,7 +72,7 @@
             </executions>
          </plugin>
       </plugins>
-   </build>
+   </build-->
 	<plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>tomcat-maven-plugin</artifactId>
@@ -81,8 +81,8 @@
 		  <server>myserver</server>
 		  <path>/web</path>
         </configuration>
-      </plugin-->
-	  <plugin>
+      </plugin>
+	  <!--plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-plugin</artifactId>
         <version>1.9.5</version>
@@ -90,12 +90,12 @@
           <connectionType>connection</connectionType>
 		  <server>VisualSVN Server</server>
         </configuration>
-      </plugin>
+      </plugin-->
 	  </plugins>
 	  </build>
-	  <scm>
+	  <!--scm>
     <connection>scm:svn:https://user-PC/svn/nani/trunk</connection>
     <developerConnection>scm:svn:https://user-PC/svn/nani/trunk</developerConnection>
     <url>https://user-PC/svn/nani/</url>
-  </scm>
+  </scm-->
 </project>
